@@ -1,0 +1,33 @@
+
+:root{
+  --yellow:#FFD400;
+  --black:#0b0b0b;
+  --gray:#1a1a1a;
+  --text:#eaeaea;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--black);color:var(--text);font-family:Inter,system-ui,Arial,Helvetica,sans-serif}
+a{color:var(--yellow);text-decoration:none}
+.container{max-width:1080px;margin:0 auto;padding:28px}
+.header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:36px;height:36px;border-radius:10px;background:var(--yellow)}
+.badge{background:var(--gray);color:var(--yellow);padding:6px 10px;border-radius:999px;font-weight:700;font-size:12px}
+.hero{border:1px solid #222;border-radius:24px;overflow:hidden;background:linear-gradient(180deg,#0b0b0b 0%,#111 100%)}
+.hero img{width:100%;display:block}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 18px;border-radius:14px;font-weight:800;border:1px solid #222;background:#111;color:#fff}
+.btn.primary{background:var(--yellow);color:#111}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+.card{background:#0f0f0f;border:1px solid #222;border-radius:18px;padding:16px}
+.card h3{color:#fff;margin:0 0 6px 0}
+.kicker{color:#888;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.code{font-weight:900;font-size:28px;background:var(--yellow);color:#111;padding:6px 10px;border-radius:10px;display:inline-block}
+.footer{color:#9a9a9a;border-top:1px solid #222;margin-top:28px;padding:18px 0;font-size:14px}
+.step{display:flex;gap:12px}
+.step-num{width:28px;height:28px;border-radius:8px;background:var(--yellow);color:#111;font-weight:900;display:flex;align-items:center;justify-content:center}
+.faq dt{font-weight:800;margin-top:12px}
+.faq dd{margin:8px 0 16px 0;color:#c9c9c9}
+.notice{background:#131313;border:1px dashed #333;border-radius:12px;padding:12px;color:#cfcfcf}
+@media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.grid{grid-template-columns:1fr} .header{flex-direction:column;gap:8px}}
